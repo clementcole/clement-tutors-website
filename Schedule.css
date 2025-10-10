@@ -1,0 +1,97 @@
+.schedule {
+  padding: 80px 0;
+  min-height: 100vh;
+}
+
+.schedule .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.schedule h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+  font-size: 2.5rem;
+}
+
+.schedule-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.calendly-option, .manual-schedule {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.calendly-option h2, .manual-schedule h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.schedule-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.teams-info {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: #e8f4fd;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.teams-info h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.teams-info p {
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .schedule-options {
+    grid-template-columns: 1fr;
+  }
+  
+  .schedule h1 {
+    font-size: 2rem;
+  }
+}
